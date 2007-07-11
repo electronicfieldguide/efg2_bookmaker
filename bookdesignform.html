@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/transitional.dtd">
+<html>
+<head>
+<title>BookMaker - printable PDFs for your EFGs</title>
+<link href="bookmaker.css" rel="stylesheet" type="text/css" />
+<script src="ecritterz_biz_colorpicker.js" type="text/javascript">
+</script>
+</head>
+<body>
+<form name="pdfmakerform" action="upload" method="post" enctype="multipart/form-data">
+<table class="menubartitle">
+<tr>
+<td class="menubartitle">BookMaker:</td>
+<td class="menubarsubtitle">printable pdfs for your EFGs</td>
+</tr>
+</table>
+
+<table class="menubarcase">
+<tr>
+<td>
+			<table class="menubar">
+				<tbody><tr>
+					<td id="platechoosedata" class="menubartextactive">
+						<a href="/efg2/plateConfiguration/platechoosedata.jsp">Select<br>Datasource</a>
+					</td>
+
+					<td class="menubaricon">
+						<img src="images/bluearrow.png" alt="arrow" border="0" height="35" width="35">
+					</td>
+					<td id="platequerydata" class="menubartext">
+						<a href="javascript:void(0)" onclick="JavaScript:platedatalistResponse('platequerydata');">Query<br>Data</a>
+					</td>
+					<td class="menubaricon">
+						<img src="images/bluearrow.png" alt="arrow" border="0" height="35" width="35">
+
+					</td>
+					<td class="menubartext" id="bookdesignform">
+						<a href="javascript:void(0)" onclick="javascript:postSearch('searchPageID','bookdesignform','form_search_id');">Design the<br>Book</a>
+					</td>
+					<td class="menubaricon">
+						<img src="images/bluearrow.png" alt="arrow" border="0" height="35" width="35">
+					</td>
+					<td id="platesaveorprint" class="menubartext"><a href="javascript:void(0)" onclick="javascript:saveConfig('pdfFillFormID');">Save<br>Configuration</a></td>
+
+				</tr>
+			</tbody></table>
+</td>
+</tr>
+</table>
+
+<table class="form">
+<tr>
+<td class="datasourcename" colspan="2">EFG selected: <!-- Name of selected datasource would go here --></td>
+</tr>
+
+<tr>
+<td class="formitem" colspan="2">Query results: <!-- list query results (number of taxa returned, items searched) --></td>
+</tr>
+
+<tr>
+<td class="instructions" colspan="2">Design your book using the form below. Any text windows that you leave blank will not appear in the book.</td>
+</tr>
+
+<tr colspan="2">
+<td class="subheading">Data Display Settings</td>
+</tr>
+
+<tr>
+<td class="formitem" colspan="2"><span class="configitem">Sort by:</span> <select name="sortby"><!-- Populate with column headings from datasource -->
+<option value="family">                                                            Family
+</option>
+<option value="genus">                                                            Genus
+</option>
+<option value="flowercolor">                                                            Flower Color
+</option>
+</select>
+<span class="configitem">Then by:</span> <select name="thenby"><!-- Populate with column headings from datasource -->
+<option value="alpha">                                                            Alphabetical
+</option>
+<option value="family">                                                            Family
+</option>
+<option value="genus">                                                            Genus
+</option>
+<option value="flowercolor">                                                            Flower Color
+</option>
+</select></td>
+</tr>
+<tr>
+<td class="formitem"><span class="configitem">Image to display:</span> <select name="imagecolumn"><!-- Show only image fields -->
+<option value="flower">                                                            Flower
+</option>
+<option value="fruit">                                                            Fruit
+</option>
+<option value="dorsalview">                                                            Dorsal View
+</option>
+<option value="ventralview">                                                            Ventral View
+</option>
+</select>
+<span class="subconfigitem"><input type="checkbox" name="imagenumber" value="" />Show all images for this category</span><br>
+<span class="subconfigitemparen">(default displays first one only)</span>
+</td>
+<td class="imagebutton"><input class="addrow" type="submit" name="Add another image category" value="Add another image category" />
+<!-- When user clicks Add button, another row like the one above appears, allowing him/her to add another field as a line in the caption -->
+</td>
+</tr>
+
+<tr>
+<td class="formitem"><span class="configitem">Image Arrangment (Number of Columns):</span> <input type="text" name="columns" size="3"
+maxlength="3" value="4" /></td>
+</tr>
+
+<!-- submitting enhancement request for the following: -->
+<!-- <tr> -->
+<!-- <td class="formitem" colspan="2">If you would like to use custom fonts, point to the location of the fonts folder on your hard drive or the server:<br /> -->
+<!--  <input type="file" name="logo1" size="25" /> </td> -->
+<!-- Not sure if type="file" is right here -->
+<!-- </tr>  -->
+
+<tr>
+<td colspan="2">
+<hr />
+</td>
+</tr>
+	
+
+
+</table>
+
+<input type="submit" name="Submit" value="Submit" /></form>
+</body>
+</html>
+
