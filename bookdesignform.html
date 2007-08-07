@@ -63,7 +63,11 @@
 </tr>
 
 <tr colspan="2">
-<td class="subheading">Data Display Settings</td>
+<td class="subheading">Display Settings</td>
+</tr>
+
+<tr>
+<td class="formitem" colspan="2">Sorting:</td>
 </tr>
 
 <tr>
@@ -86,6 +90,11 @@
 </option>
 </select></td>
 </tr>
+
+<tr>
+<td class="formitem" colspan="2">Images:</td>
+</tr>
+
 <tr>
 <td class="formitem"><span class="configitem">Image to display:</span> <select name="imagecolumn"><!-- Show only image fields -->
 <option value="flower">                                                            Flower
@@ -106,8 +115,28 @@
 </tr>
 
 <tr>
-<td class="formitem"><span class="configitem">Image Arrangment (Number of Columns):</span> <input type="text" name="columns" size="3"
+<td class="formitem"><span class="configitem">Arrangment (Number of Columns):</span> <input type="text" name="columns" size="3"
 maxlength="3" value="4" /></td>
+</tr>
+
+<tr>
+<td class="formitem" colspan="2">Data:</td>
+</tr>
+
+<tr>
+<td class="formitem"><span class="configitem">Data to display:</span> <select name="imagecolumn"><!-- Show only data fields -->
+<option value="Habitat">                                                            Habitat
+</option>
+<option value="Leaf Margins">                                                            Leaf Margins
+</option>
+<option value="Flower Color">                                                            Flower Color
+</option>
+</select>
+</td>
+<td class="imagebutton"><input class="addrow" type="submit" name="Add another row" value="Add another row" /><input class="addrow" type="submit" name="Delete row" value="Delete row" />
+
+<!-- When user clicks Add button, another row like the one above appears, allowing him/her to add another field, order determined by vertical order on this page -->
+</td>
 </tr>
 
 <!-- submitting enhancement request for the following: -->

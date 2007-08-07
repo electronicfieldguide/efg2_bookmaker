@@ -87,9 +87,10 @@ padding-left: 10px;
 }
 td.formitem {
 font-family: sans, helvetica, verdana, arial;
-padding-top: 30px;
+padding-top: 20px;
 padding-left: 10px;
 vertical-align: top;
+color: blue;
 }
 td.formitemcaption {
 margin: 20px;
@@ -162,7 +163,7 @@ padding-bottom: 10px;
 }
 td.imagebutton {
 text-align: left;
-padding-top: 40px;
+padding-top: 30px;
 padding-bottom: 10px;
 padding-left: 12px;
 padding-right: 12px;
@@ -205,17 +206,19 @@ padding-top: 0px;
 padding-left: 40px;
 padding-bottom: 0px;
 }
+.configitem {
+font-family: sans, helvetica, verdana, arial;
+font-weight: normal;
+font-size: .75em;
+padding-left: 20px;
+color: black;
+}
 .configitemfield {
 font-family: sans, helvetica, verdana, arial;
 font-weight: bold;
 font-size: .9em;
 padding-left: 8px;
-}
-.configitem {
-font-family: sans, helvetica, verdana, arial;
-font-weight: normal;
-font-size: .75em;
-padding-left: 10px;
+color: black;
 }
 .subconfigitem {
 font-family: sans, helvetica, verdana, arial;
@@ -224,12 +227,14 @@ font-size: .7em;
 padding-left: 15px;
 text-align: right;
 align: right;
+color: black;
 }
 .subconfigitemparen {
 font-family: sans, helvetica, verdana, arial;
 font-weight: normal;
 font-size: .7em;
 padding-left: 255px;
+color: black;
 }
 
 .formitemtitle {
@@ -272,15 +277,14 @@ vertical-align: bottom;
 hr {
 border-top: solid 1px #000;
 }
-
 .addrow {
 background-color: #f5fff1;
 border: 2px #333333 groove;
 font-weight: bold;
 font-size: 8pt;
 padding: 3px;
+margin-right: 20px;
 color: #006633;
-width: 100%;
 }
 input.addrow:hover {
 color: #f5fff1;
