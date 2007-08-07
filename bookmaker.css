@@ -96,7 +96,8 @@ td.formitemcaption {
 margin: 20px;
 font-family: sans, helvetica, verdana, arial;
 padding-top: 5px;
-padding-left: 10px;
+padding-lef
+t: 10px;
 vertical-align: top;
 border: 0px solid darkgreen;
 }
@@ -237,6 +238,14 @@ padding-left: 255px;
 color: black;
 }
 
+.formitem_mini {
+font-family: sans, helvetica, verdana, arial;
+font-weight: normal;
+font-size: .7em;
+padding-left: 12px;
+align: right;
+color: black;
+}
 .formitemtitle {
 font-size: 12px;
 font-weight: bold;

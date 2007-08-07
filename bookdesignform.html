@@ -21,7 +21,7 @@
 <td>
 			<table class="menubar">
 				<tbody><tr>
-					<td id="platechoosedata" class="menubartextactive">
+					<td id="platechoosedata" class="menubartext">
 						<a href="/efg2/plateConfiguration/platechoosedata.jsp">Select<br>Datasource</a>
 					</td>
 
@@ -35,7 +35,7 @@
 						<img src="images/bluearrow.png" alt="arrow" border="0" height="35" width="35">
 
 					</td>
-					<td class="menubartext" id="bookdesignform">
+					<td class="menubartextactive" id="bookdesignform">
 						<a href="javascript:void(0)" onclick="javascript:postSearch('searchPageID','bookdesignform','form_search_id');">Design the<br>Book</a>
 					</td>
 					<td class="menubaricon">
@@ -67,32 +67,77 @@
 </tr>
 
 <tr>
-<td class="formitem" colspan="2">Sorting:</td>
+<td class="formitem" colspan="2">Title and Headings:</td>
 </tr>
 
 <tr>
-<td class="formitem" colspan="2"><span class="configitem">Sort by:</span> <select name="sortby"><!-- Populate with column headings from datasource -->
-<option value="family">                                                            Family
+<td class="formitem_mini" colspan="2">Enter the book title and indicate which fields you wish to appear in the "header" section of each taxon account.</td>
+</tr>
+
+<tr>
+<td class="formitem">
+<span class="configitem">Document Title:</span> <input type="text" name="title" size="50" maxlength="150" value="" />
+</td>
+</tr>
+
+<tr>
+<td class="formitem"><span class="configitem">Item header (ex. Scientific Name):</span> <select name="imagecolumn"><!-- Show only data fields -->
+<option value="Common Name">                                                            Common Name
 </option>
-<option value="genus">                                                            Genus
+<option value="Family">                                                            Family
 </option>
-<option value="flowercolor">                                                            Flower Color
+<option value="Scientific Name">                                                            Scientific Name
 </option>
 </select>
-<span class="configitem">Then by:</span> <select name="thenby"><!-- Populate with column headings from datasource -->
-<option value="alpha">                                                            Alphabetical
+</td>
+</tr>
+
+<tr>
+<td class="formitem"><span class="configitem">Item subheader (ex. Family):</span> <select name="imagecolumn"><!-- Show only data fields -->
+<option value="Common Name">                                                            Common Name
 </option>
-<option value="family">                                                            Family
+<option value="Family">                                                            Family
 </option>
-<option value="genus">                                                            Genus
+<option value="Scientific Name">                                                            Scientific Name
 </option>
-<option value="flowercolor">                                                            Flower Color
+</select>
+</td>
+<td class="imagebutton"><input class="addrow" type="submit" name="Add another subheader" value="Add another subheader" /><input class="addrow" type="submit" name="Delete" value="Delete" />
+
+<!-- When user clicks Add button, another row like the one above appears, allowing him/her to add another field, order determined by vertical order on this page -->
+</td>
+</tr>
+
+<tr>
+<td class="formitem" colspan="2">Data:</td>
+</tr>
+
+<tr>
+<td class="formitem_mini" colspan="2">Indicate the other data you want displayed for each taxonomic account. They will appear in the order you place them on this page.</td>
+</tr>
+
+<tr>
+<td class="formitem"><span class="configitem">Data to display:</span> <select name="imagecolumn"><!-- Show only data fields -->
+<option value="Habitat">                                                            Habitat
 </option>
-</select></td>
+<option value="Leaf Margins">                                                            Leaf Margins
+</option>
+<option value="Flower Color">                                                            Flower Color
+</option>
+</select>
+</td>
+<td class="imagebutton"><input class="addrow" type="submit" name="Add another row" value="Add another row" /><input class="addrow" type="submit" name="Delete row" value="Delete row" />
+
+<!-- When user clicks Add button, another row like the one above appears, allowing him/her to add another field, order determined by vertical order on this page -->
+</td>
 </tr>
 
 <tr>
 <td class="formitem" colspan="2">Images:</td>
+</tr>
+
+<tr>
+<td class="formitem_mini" colspan="2">Select which images to display and how to arrange them on the page.</td>
 </tr>
 
 <tr>
@@ -120,23 +165,33 @@ maxlength="3" value="4" /></td>
 </tr>
 
 <tr>
-<td class="formitem" colspan="2">Data:</td>
+<td class="formitem" colspan="2">Sorting:</td>
 </tr>
 
 <tr>
-<td class="formitem"><span class="configitem">Data to display:</span> <select name="imagecolumn"><!-- Show only data fields -->
-<option value="Habitat">                                                            Habitat
+<td class="formitem_mini" colspan="2">Indicate how you would like your taxonomic accounts to be ordered in the book.</td>
+</tr>
+
+
+<tr>
+<td class="formitem" colspan="2"><span class="configitem">Sort by:</span> <select name="sortby"><!-- Populate with column headings from datasource -->
+<option value="family">                                                            Family
 </option>
-<option value="Leaf Margins">                                                            Leaf Margins
+<option value="genus">                                                            Genus
 </option>
-<option value="Flower Color">                                                            Flower Color
+<option value="flowercolor">                                                            Flower Color
 </option>
 </select>
-</td>
-<td class="imagebutton"><input class="addrow" type="submit" name="Add another row" value="Add another row" /><input class="addrow" type="submit" name="Delete row" value="Delete row" />
-
-<!-- When user clicks Add button, another row like the one above appears, allowing him/her to add another field, order determined by vertical order on this page -->
-</td>
+<span class="configitem">Then by:</span> <select name="thenby"><!-- Populate with column headings from datasource -->
+<option value="alpha">                                                            Alphabetical
+</option>
+<option value="family">                                                            Family
+</option>
+<option value="genus">                                                            Genus
+</option>
+<option value="flowercolor">                                                            Flower Color
+</option>
+</select></td>
 </tr>
 
 <!-- submitting enhancement request for the following: -->
