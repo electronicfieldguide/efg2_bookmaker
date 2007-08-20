@@ -301,3 +301,23 @@ background-color: #006633;
 border: 2px groove #333333;
 outline: 1px solid #333333;
 }
+div.makingbookmsg {
+float: left;
+font-size: 1em;
+font-weight: normal;
+font-family: sans, helvetica, verdana, arial;
+border: #3333FF groove 2px;
+padding: 30px;
+margin-bottom: 15px;
+background: transparent;
+background-color: #FFFFFF;
+opacity: .8;
+filter:alpha(opacity=80); /* IE's opacity*/ 
+}
+.clear {
+clear: both;
+}
+a.makingbookmsg {
+text-decoration: underline;
+font-weight: bold;
+}
