@@ -331,3 +331,7 @@ span.makingbookmsg {
 font-weight: bold;
 color: #FF0000;
 }
+p.makingbookmsg {
+font-size: .8em;
+font-weight: normal;
+}
