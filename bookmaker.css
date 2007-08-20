@@ -304,10 +304,10 @@ outline: 1px solid #333333;
 div.makingbookmsg {
 float: left;
 font-size: 1em;
-font-weight: normal;
+font-weight: bold;
 font-family: sans, helvetica, verdana, arial;
-border: #3333FF groove 2px;
-padding: 30px;
+border: #FF0000 groove 6px;
+padding: 20px;
 margin-bottom: 15px;
 background: transparent;
 background-color: #FFFFFF;
@@ -320,4 +320,14 @@ clear: both;
 a.makingbookmsg {
 text-decoration: underline;
 font-weight: bold;
+color: #FF0000;
+}
+a.makingbookmsg:hover {
+text-decoration: none;
+font-weight: bold;
+color: #FF0000;
+}
+span.makingbookmsg {
+font-weight: bold;
+color: #FF0000;
 }

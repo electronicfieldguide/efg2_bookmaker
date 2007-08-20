@@ -49,13 +49,13 @@
 </tr>
 </table>
 
-<!-- start of code for bookmaking msg added 08/17/2007 by Jenn -->
+<!-- start of code for bookmaking msg edited 08/20/2007 by Jenn (just the span tag around 5 minutes) -->
 <div class="makingbookmsg">
-Your book is now being created. Please wait <b>5 minutes</b> and then <a  class="makingbookmsg" href="" title="Download Book">click here</a> to download.
+Your book is now being created. Please wait <span class="makingbookmsg">5 minutes</span> and then <a  class="makingbookmsg" href="" title="Download Book">click here</a> to download.
 </div>
 
 <div class="clear"></div>
-<!-- end of code added 08/17/2007 by Jenn -->
+<!-- end of code edited 08/20/2007 by Jenn -->
 
 <table class="form">
 <tr>
@@ -82,11 +82,31 @@ Your book is now being created. Please wait <b>5 minutes</b> and then <a  class=
 <td class="formitem_mini" colspan="2">Enter the book title and indicate which fields you wish to appear in the "header" section of each taxon account.</td>
 </tr>
 
+<!-- Start of changes made 08/20/07 (3 new text windows plus removed word "Document" and expanded 1st text window to size of 54) -->
 <tr>
 <td class="formitem">
-<span class="configitem">Document Title:</span> <input type="text" name="title" size="50" maxlength="150" value="" />
+<span class="configitem">Title:</span> <input type="text" name="title" size="54" maxlength="150" value="" />
 </td>
 </tr>
+
+<tr>
+<td class="formitem">
+<span class="configitem">SubTitle:</span> <input type="text" name="subtitle" size="50" maxlength="150" value="" />
+</td>
+</tr>
+
+<tr>
+<td class="formitem">
+<span class="configitem">Credits 1</span> <input type="text" name="credits1e" size="50" maxlength="150" value="" />
+</td>
+</tr>
+
+<tr>
+<td class="formitem">
+<span class="configitem">Credits 2</span> <input type="text" name="credits2" size="50" maxlength="150" value="" />
+</td>
+</tr>
+<!-- End of changes made 08/20/07 -->
 
 <tr>
 <td class="formitem"><span class="configitem">Item header (ex. Scientific Name):</span> <select name="imagecolumn"><!-- Show only data fields -->
